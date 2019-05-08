@@ -1,0 +1,26 @@
+body {
+    background: black;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#terminal-top {
+    background-color: #ccc;
+    border-radius: 5px;
+    width: 750px;
+    padding-top: 13px;
+}
+#console {
+    background-color: #383737;
+    height: 400px;
+    padding: 30px 40px;
+}
+
+#console h5 {
+    color: white;
+    font-family: 'Monaco', 'Courier New';
+}
