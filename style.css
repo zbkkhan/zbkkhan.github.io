@@ -1,11 +1,13 @@
 body {
-    background: black;
+/*    background: #0A192F;*/
+/*    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);*/
 }
 
-.container {
+.flex-container {
     display: flex;
     align-items: center;
     justify-content: center;
+/*    background: #E7EAF6;*/
 }
 
 #terminal-top {
@@ -24,3 +26,40 @@ body {
     color: white;
     font-family: 'Monaco', 'Courier New';
 }
+
+#about-me h3, h2 {
+    font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+/*    color: #64FFDA;*/
+}
+
+#profile-pic {
+    height: 400px;
+    width: 200px;
+    background: red;
+/*    margin-top: 100px;*/
+    margin-left: 50px;
+}
+
+.about-me {
+    /* Rectangle */
+    margin-bottom: 50px;
+/*margin-top: 200px;*/
+/*
+position: absolute;
+width: 1440px;
+height: 703px;
+left: 0px;
+top: 0px;
+*/
+}
+
+.selection-panel {
+    background-color: red;
+    border-left-width: 20px;
+    border: 20px;
+    border-left-color: black;
+}
+
+
+
+

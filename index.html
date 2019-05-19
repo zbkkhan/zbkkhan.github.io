@@ -1,16 +1,188 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="new-style.css">
+        <link rel="stylesheet" type="text/css" href="loader.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+        </script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <title>Zain's Portfolio</title>
     </head>
     <body>
-        <div class="container">
-            <div id="terminal-top">
-                <div id="console">
-                    <h5> > Hello World! My name is Zain Khan</h5>
-                    <h5> > I'm a 4th year Computer Engineering major from University of Waterloo </h5>
-                </div>
+<!--
+        <div class="loading-container">
+            <div class="holder">
+                <div class="box"></div>
+            </div>
+            <div class="holder">
+                <div class="box"></div>
+            </div>
+            <div class="holder">
+                <div class="box"></div>
             </div>
         </div>
-        
+-->
+        <div class="main-container">
+            <header>
+                <div class="bio">
+                    <h1 class="anim my-name">Zain Khan | Web Developer</h1>
+                    <p class="anim">
+                        Hello World 👋 I'm Zain<br>
+                        I'm a 4th year Computer Engineering major from the University of Waterloo <br>
+<!--                        I specialize in Backend & Frontend web development-->
+                    </p>
+                </div>
+                <img class="anim profile-pic" src="https://picsum.photos/300/400">
+            </header>
+            <div class="resume">
+                <h2>// Resume</h2>
+                <div class="anim skills">
+                    <div class="skill-section"> <!-- repeatable -->
+                        <section class="skill-body">
+                            <h4>Server side:</h4>
+                            <div class="skill">
+                                <h5>Java</h5>
+                            </div>
+                            <div class="skill">
+                                <h5>Ruby on Rails</h5>
+                            </div>
+                            <div class="skill">
+                                <h5>Node.js</h5>
+                            </div>
+                            <div class="skill">
+                                <h5>Python</h5>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="skill-section"> <!-- repeatable -->
+                        <section class="skill-body">
+                            <h4>Client side:</h4>
+                            <div class="skill">
+                                <h5>Javascript</h5>
+                            </div>
+                            <div class="skill">
+                                <h5>React</h5>
+                            </div>
+                            <div class="skill">
+                                <h5>React Native</h5>
+                            </div>
+                            <div class="skill">
+                                <h5>Java</h5>
+                            </div>
+                            <div class="skill">
+                                <h5>HTML5</h5>
+                            </div>
+                            <div class="skill">
+                                <h5>LESS</h5>
+                            </div>
+                            <div class="skill">
+                                <h5>SASS</h5>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="anim experience">
+                    <div class="job">
+                        <div class="job-meta">
+                            <div class="job-meta-left">
+                                <h4 class="job-name">Nvidia</h4>
+                                <h4 class="job-title">Full-Stack Web Developer</h4>
+                            </div>
+                            <div class="job-meta-right">
+                                <h5 class="job-location">Santa Clara, United States</h5>
+                                <h6 class="job-date">Aug. 2018 - Dec 2018</h6>
+                            </div>
+                        </div>
+                        <div class="job-body">
+                            <ul>
+                                <li>Implemented a containerized micro-service architecture utilizing Ruby on Rails, React JS, and Docker clusters, with an Nginx load balancer</li>
+                                <li>Independently managed devops of multiple Linux servers to ensure high-availability</li>
+                                <li>Re-factored 40% of the client-side codebase to upgrade a critical component library</li>
+                                <li>Deployed a native Electron application designed for stress testing Nvidia GPUs for qualification on Windows OS</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="anim job">
+                        <div class="job-meta">
+                            <div class="job-meta-left">
+                                <h4 class="job-name">Taplytics</h4>
+                                <h4 class="job-title">Full-Stack Web Developer</h4>
+                            </div>
+                            <div class="job-meta-right">
+                                <h5 class="job-location">Toronto, Canada</h5>
+                                <h6 class="job-date">Jan. 2018 - Apr 2018</h6>
+                            </div>
+                        </div>
+                        <div class="job-body">
+                            <ul>
+                                <li>Optimized a concurrent mobile push-notification delivery system by 124% in latency and 50% in storage by re-implementing the distributed
+design using Redis, SQS, SNS, and RDS</li>
+                                <li>Recovered a corrupt segmentation system for A/B testing using deep data analysis over BigQuery, SQL, and NoSQL databases;
+Reduced data-inconsistency by 14% in a 2 month period</li>
+                                <li>Lead engineer in designing and developing a real-time, AI service capable of delivering on high-throughput, high-availability, and auto-scaling
+using NodeJS, Appengine, Datastore, Postgres, and MongoDB</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="anim job">
+                        <div class="job-meta">
+                            <div class="job-meta-left">
+                                <h4 class="job-name">Eyereturn Marketing</h4>
+                                <h4 class="job-title">Java Backend Web Developer</h4>
+                            </div>
+                            <div class="job-meta-right">
+                                <h5 class="job-location">Toronto, Canada</h5>
+                                <h6 class="job-date">May. 2017 - Aug 2017</h6>
+                            </div>
+                        </div>
+                        <div class="job-body">
+                            <ul>
+                                <li>Reduced latency of batched fetches of 11,000 production records on a concurrent Java Spring architecture by 10x using Jackson / Hibernate</li>
+                                <li>Designed and developed an automated e-mail delivery service for mass e-mail distribution</li>
+                                <li>Visualized and identified processing latency bottlenecks within critical applications using Graphite, Grafana, and StatsD</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="anim job">
+                        <div class="job-meta">
+                            <div class="job-meta-left">
+                                <h4 class="job-name">Oracle</h4>
+                                <h4 class="job-title">Java Backend & Full-stack Developer</h4>
+                            </div>
+                            <div class="job-meta-right">
+                                <h5 class="job-location">Toronto, Canada</h5>
+                                <h6 class="job-date">Sep. 2016 - Dec 2016</h6>
+                            </div>
+                        </div>
+                        <div class="job-body">
+                            <ul>
+                                <li>Developed core product APIs in a Java microservice and improved testing code coverage by 15% using Mockito, and Junit</li>
+                                <li>Redesigned 30% of a client facing CRM application using React and Redux / Stativus</li>
+                                <li>Initiated and led the adoption of Big-data analytics and visualizations of PoD performances with Kibana and ElasticSearch</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <footer>
+                <!--insert footer markup -->
+            </footer>
+        </div>
     </body>
+    <script>
+//        $(function() {
+//            // setTimeout() function will be fired after page is loaded
+//            // it will wait for 5 sec. and then will fire
+//            // $("#successMessage").hide() function
+//            setTimeout(function() {
+//                $(".loading-container").fadeOut();
+//                
+//            }, 1000);
+//        });
+        window.sr = ScrollReveal();
+        sr.reveal('.anim', {delay:500});
+
+//        ScrollReveal().reveal('.image');
+    </script>
 </html>

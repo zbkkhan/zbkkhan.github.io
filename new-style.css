@@ -1,0 +1,96 @@
+body {
+  background: #232b2b;
+    font-family: 'Roboto Mono';
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+/*    grid-auto-rows: 1fr 2fr;*/
+    grid-template-areas: 
+        ". header ."
+        ". resume ."
+}
+
+.bio {
+    grid-area: bio;
+}
+
+.profile-pic {
+    grid-area: profile-pic;
+    align-self: center;
+    justify-self: center;
+}
+
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 10em;
+    grid-template-areas: 
+        ". profile-pic"
+        "bio profile-pic"
+        ". profile-pic";
+    height: 100vh;
+/*    margin: 100px 0 100px 0;*/
+/*
+    margin-left: 120px;
+    margin-top: 100px; 
+*/
+}
+
+
+.resume {
+    grid-area: resume;
+}
+
+.skills {
+    margin-bottom: 30px;
+}
+
+.skill-section {
+    height: 30px;
+}
+
+.skill-body {
+    display: flex;
+}
+
+.skill {
+    margin-left: 20px;
+}
+
+.job {
+    margin-bottom: 40px;
+}
+.job-meta {
+    display: flex;
+}
+
+.job-meta-right {
+    margin-left: auto;
+}
+
+.job-title {
+    color: #00FF00;
+}
+
+li {
+    margin-bottom: 6px;
+    color: grey;
+}
+
+h1, p, h2, h3, h4, h5, h6, ul {
+    color: white;
+}
+
+
+/*Responsive code
+@media screen and (min-width: 34em) {
+.site {
+    ...
+    }
+}
+
+*/
