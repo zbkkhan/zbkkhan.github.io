@@ -102,7 +102,14 @@ header img {
 .resume {
     grid-area: resume;
 }
+.resume-header {
+    display: flex;
+    justify-content: space-between;
+}
 
+.resume-header span {
+    padding-top: 18px
+}
 .skills {
     margin-bottom: 30px;
 }
