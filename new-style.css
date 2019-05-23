@@ -98,7 +98,9 @@ header img {
 
 }
 
-
+.resume-responsive {
+    display: none;
+}
 .resume {
     grid-area: resume;
 }
@@ -146,7 +148,7 @@ li {
     color: grey;
 }
 
-h1, p, h2, h3, h4, h5, h6, ul {
+text, h1, p, h2, h3, h4, h5, h6, ul {
     color: white;
 }
 
@@ -154,12 +156,45 @@ span {
     color: grey;
 }
 
-
-/*Responsive code
-@media screen and (min-width: 34em) {
-.site {
-    ...
+@media only screen and (max-width: 600px) {
+/*
+    body {
+        background-color: lightblue;
     }
+*/
+    
+    .main-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "typing-effect"
+            "header"
+            "projects"
+            "resume"
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .bio {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .projects-data {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+            align-items: center
+    }
+     
+    .resume {
+        display: none;     
+    }
+    
 }
 
-*/
